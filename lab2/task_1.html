@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Facebook</title>
+        <style>
+            body {
+                background-color: #f0f2f5;
+                font-family: Arial, sans-serif;
+                margin:0;
+                padding: 0;
+            }
+            .box {
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .title-box {
+                width: 500px;
+            }
+            #i {
+                width: 235px;
+                margin-bottom: -10px;
+            }
+            #p {
+                color: black;
+                font-size: 26px;
+                font-weight: normal;
+                line-height: 32px;
+            }
+            .main-box {
+                width: 350px;
+                background: white;
+                text-align: center;
+                padding: 15px;
+                border-radius: 5px;
+                margin-left: 60px;
+                box-shadow: 0px 2px 10px 1px rgba(71,71,71,0.52);
+            }
+            .main-box input {
+                width: 100%;
+                font-size: 18px;
+                padding: 15px;
+                margin-bottom: 15px;
+                border: 1px solid rgb(197, 194, 194);
+                border-radius: 5px;
+                box-sizing: border-box;
+                outline: none;
+            }
+            .main-box input:focus {
+                box-shadow: 0px 0px 1px 1px rgb(0, 98, 255);
+            }
+            .main-box button {
+                width:100%;
+                color:white;
+                font-size:20px;
+                font-weight: 600;
+                margin-bottom: 15px;
+                border:none;
+                border-radius: 5px;
+                padding:13px 0;
+                cursor: pointer;
+                background: rgb(0, 76, 255);
+            }
+            .main-box button:hover {
+                background: rgb(0, 115, 255);
+            }
+            .main-box a {
+                color: rgb(0, 76, 255);
+                font-size: 14px;
+                text-decoration: none;
+                display: block;
+                margin-top: 5px;
+                margin-bottom: 20px;
+            }
+            .main-box a:hover {
+                text-decoration: underline;
+            }
+            .main-box hr {
+                border: 1px solid rgb(207, 207, 210);
+                margin-bottom: 15px; 
+            }
+            .main-box .butt a {
+                color: white;
+                font-size: 16px;
+                font-weight: 600;
+                display: inline-block;
+                text-decoration: none;
+                margin-bottom: 5px;
+                background: rgb(11, 179, 31);
+                border-radius: 5px;
+                padding: 15px 20px;
+            }
+            .main-box .butt a:hover {
+                background: rgb(52, 206, 13);;
+            }
+            .log .pp {
+                width: 350px;
+                color: black;
+                background: #f0f2f5;
+                text-align: center;
+                font-weight: normal;
+                margin-top: 30px;
+                font-size:14px;
+                margin-left: 70px;
+                margin-bottom: 30px;
+                
+            }
+            .log {
+                width: 350px;
+                display: flex;
+                flex-direction: column;
+            }
+            .log .pp {
+                text-align: center;
+                max-width: 360px;
+                color: black;
+            }
+            .log .pp .black {
+                color:black;
+                font-size: 14px;
+                text-decoration: none;
+                display: block;
+            }
+            .log .pp a:hover {
+                text-decoration: underline;
+            }
+           
+            .footer {
+                width: 100%;
+                background: #fff;
+                margin-top: auto;
+                padding: 20px 0 28px;
+                font-size: 12px;
+                color: #8a8d91;
+            }
+            .lang, .fo {
+                max-width: 980px;
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 6px 12px;
+                padding: 0 20px;
+            }
+            .lang {
+                padding-bottom: 10px;
+                border-bottom: 1px solid #ddd;
+                margin-bottom: 8px;
+            }
+            .footer a {
+                color: #8a8d91;
+                text-decoration: none;
+            }
+            .footer a:hover {
+                text-decoration: underline;
+            }
+            .lang button {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 28px;
+                height: 20px;
+                border: 1px solid #ccd0d5;
+                border-radius: 2px;
+                background: #f5f6f7;
+                color: #4b4f56;
+                font-size: 20px;
+            }
+            .footer-meta {
+                max-width: 980px;
+                margin: 10px auto 0;
+                padding: 0 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box">
+            <div class="title-box">
+                <img id="i" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Facebook_Logo_%282019%29.svg/2560px-Facebook_Logo_%282019%29.svg.png" alt="Facebook" width="200">
+                <p id="p">Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</p>
+            </div>
+
+            <div class="log">
+            <div class="main-box">
+                <form action="#">
+                    <input type="text" placeholder="Электронный адрес или номер телефона">
+                    <input type="password" placeholder="Пароль">
+                    <button onclick="window.location.href='https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzY5NzEzNzM0LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&next'" type="button">Вход</button>
+                    <a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0">Забыли пароль?</a>
+                </form>
+                <hr>
+                <div class="butt">
+                    <a href="https://www.facebook.com/r.php?entry_point=login">Создать новый аккаунт</a>
+                </div>
+            </div>
+                <p class="pp"><strong><a class="black" href="https://www.facebook.com/pages/create/?ref_type=registration_form">Создать Страницу</a></strong> знаменитости, музыкальной группы или компании.</p>
+        </div>
+        </div>
+        <footer class="footer">
+            <div class="lang">
+                <a href="#">Руский</a>
+                <a href="#">Қазақша</a>
+                <a href="#">English (US)</a>
+                <a href="#">Türkçe</a>
+                <a href="#">Bahasa Indonesia</a>
+                <a href="#">中文(简体)</a>
+                <a href="#">Deutsch</a>
+                <a href="#">한국어</a>
+                <a href="#">Shqip</a>
+                <a href="#">Español</a>
+                <a href="#">Português (Brasil)</a>
+                <button>+</button>
+                <hr>
+            </div>
+
+            <div class="fo">
+            <a href="#">Зарегистрироваться</a>
+            <a href="#">Вход</a>
+            <a href="#">Messenger</a>
+            <a href="#">Facebook Lite</a>
+            <a href="#">Видео</a>
+            <a href="#">Meta Pay</a>
+            <a href="#">Магазин Meta</a>
+            <a href="#">Meta Quest</a>
+            <a href="#">Ray-Ban Meta</a>
+            <a href="#">Meta AI</a>
+            <a href="#">Instagram</a>
+            <a href="#">Threads</a>
+            <a href="#">Центр информации о выборах</a>
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Центр конфиденциальности</a>
+            <a href="#">Информация</a>
+            <a href="#">Создать рекламу</a>
+            <a href="#">Создать Страницу</a>
+            <a href="#">Разработчикам</a>
+            <a href="#">Вакансии</a>
+            <a href="#">Файлы cookie</a>
+            <a href="#">Рекламные предпочтения</a>
+            <a href="#">Условия использования</a>
+            <a href="#">Справка</a>
+            <a href="#">Загрузка контактов и лиц, не являющихся пользователями</a>
+        </div>
+        <div class="footer-meta">Meta © 2026</div>
+    </footer>
+    </body>
+</html>

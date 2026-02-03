@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Instagram</title>
+        <style>
+            .container {
+                display:flex;
+                height: 100vh;
+            }
+            .left {
+                flex:1;
+                padding: 130px;
+            }
+            .right {
+                flex:1;
+                padding: 20px;
+                margin-top: 50px;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+            .line {
+                width: 2px;
+                background: rgb(208, 206, 206)
+            }
+            .im {
+                width: 80px;
+                border-radius: 20px;
+                margin-left:  -80px;
+                margin-top: -200px;
+                background-color: white;
+            }
+            .right h4 {
+                font-family:sans-serif;
+            }
+            .right input {
+                width: 100%;
+                font-size: 15px;
+                font-family: cursive;
+                padding: 16px;
+                margin-bottom: 15px;
+                border: 1px solid rgb(197, 194, 194);
+                border-radius: 15px;
+                box-sizing: border-box;
+                outline: none;
+            }
+            .right input .lgg {
+                margin: 10px 0;
+	            background-color: #3897f0;
+                border: 1px solid #3897f0;
+                border-radius: 4px;
+                font-size: 10px;
+                text-align: center;
+                padding: 5px;
+            }
+            .right input .btn a{
+	            color: #fff;
+	            display: block;
+            }
+            .right button {
+                width:100%;
+                color:white;
+                font-size:18px;
+                font-weight: 600;
+                margin-bottom: 15px;
+                border:none;
+                border-radius: 30px;
+                padding:10px 0;
+                cursor: pointer;
+                background: rgb(155, 203, 255);
+            }
+            .right a {
+                color: black;
+                font-size: 16px;
+                font-weight: 400;
+                font-family: math;
+                text-decoration: none;
+                display: block;
+                text-align: center;
+                width:100%;      
+                margin-bottom: 50px;
+                border:none;
+                border-radius: 30px;
+                padding:13px 0;
+                cursor: pointer;
+                background: white;
+            }
+            .right a:hover {
+                background-color: rgb(212, 210, 210);
+            }
+            .left .tak {
+                font-size: 35px;
+                text-align: center;
+            }
+            .left .stories {
+                margin-left:50px;
+                margin-bottom:20px;
+                padding-bottom: 40px;
+            }
+            .right .log-fb {
+                width:100%;
+                color:black;
+                font-size:15px;
+                font-weight: 200;
+                margin-bottom: 20px;
+                border:1px solid rgb(197, 194, 194);
+                border-radius: 30px;
+                padding:13px 0;
+                cursor: pointer;
+                background: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+            }
+            .fb-icon {
+                width: 15px;
+                height: 15px;
+            }
+            .right .log-fb:hover {
+                background: rgb(231, 229, 229);
+            }
+            .right .sozdat {
+                width:100%;
+                color:blue;
+                font-size:15px;
+                font-weight: 200;
+                margin-bottom: 20px;
+                border:1px solid blue;
+                border-radius: 30px;
+                padding:13px 0;
+                cursor: pointer;
+                background: white;
+            }
+            .right .sozdat:hover {
+                background: rgb(231, 229, 229);
+            }
+            .right .meta {
+                width:30%;
+                margin-left: 200px;
+                margin-top: -20px;
+            }
+            .left h1 {
+                font-weight: 40;
+                margin-top: -10px;
+            }
+            .left .tak .span-color1 {
+                color:rgb(255, 94, 0)
+            }
+            .left .tak .span-color2 {
+                color:rgb(255, 85, 0)
+            }
+            .left .tak .span-color3 {
+                color:rgba(250, 62, 0, 0.973)
+            }
+            .left .tak .span-color4 {
+                color:rgb(255, 38, 0)
+            }
+            .left .tak .span-color5 {
+                color:rgb(255, 0, 60)
+            }
+            .left .tak .span-color6 {
+                color:rgb(234, 38, 70)
+            }
+            .left .tak .span-color7 {
+                color:rgb(240, 36, 64)
+            }
+            .left .tak .span-color8 {
+                color:rgb(255, 0, 157)
+            }
+            .left .tak .span-color9 {
+                color:rgb(255, 0, 183)
+            }
+            .left .tak .span-color10 {
+                color:rgb(255, 0, 174)
+            }
+            .left .tak .span-color11 {
+                color:rgb(243, 4, 191)
+            }
+            .left .tak .span-color12 {
+                color:rgb(255, 0, 234)
+            }
+            .left .tak .span-color13 {
+                color:rgb(221, 0, 255)
+            }
+            .footer {
+                border-top: 1px solid lightgray;
+                padding: 20px;
+                color: gray;
+                text-decoration: None;
+                font-size: 13px;
+                text-align: center;
+            }
+            .footer a{
+                color: gray;
+                text-decoration: None;
+                margin: 8px;
+                font-size: 13px;
+            }
+            .footer a:hover{
+                text-decoration: underline;
+            }
+            .footer-links {
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left">
+                <img class="im" src="https://img.freepik.com/premium-vector/instagram-social-media-brand-logo-icon-set_628407-1996.jpg?semt=ais_hybrid&w=740&q=80">
+                <h1 class="tak">Посмотрите, какими моментами из жизни поделились ваши <span class="span-color1">б</span><span class="span-color2">л</span><span class="span-color3">и</span><span class="span-color4">з</span><span class="span-color5">к</span><span class="span-color6">и</span><span class="span-color7">е</span> <span class="span-color8">д</span><span class="span-color9">р</span><span class="span-color10">у</span><span class="span-color11">з</span><span class="span-color12">ь</span><span class="span-color13">я</span>.</h1>
+                <div><img class="stories" src="https://static.cdninstagram.com/rsrc.php/v4/yD/r/nWfBjz-5_uf.png" width="450"></div>
+            </div>
+            <div class="line"></div>
+            <div class="right">
+                <h4>Войти в Instagram</h4>
+                <form action="#">
+                    <input type="text" placeholder="Имя пользователя, номер мобильного телефона или электронный адрес">
+                    <input type="password" placeholder="Пароль">
+                    <button class="lgg" type="button">Войти</button>
+                    <a href="https://www.instagram.com/accounts/password/reset/">Забыли пароль?</a>
+                    <button class="log-fb" onclick="window.location.href='https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Foidc%2F%3Fapp_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignupviafb%252F%26response_type%3Dcode%26scope%3Dopenid%2Bemail%2Bprofile%2Blinking%26state%3DATmoQ74KzTLy7OrQ_mzfVbTbOZHAEfNVORYgc1bgCuhSgFS4hLzhTflfI9C7-By9MBnoh7i3RBLj7VNPq3z5J-k2dkDnvUaAlazn18hP22xuw_XY8KZdNTHLGg6Xh5YibEdQP_QCUpo69_el9z1qu1MctxbAQXYz-3kRTZvTsFdMgEfshzLCq5uyoPIg6HMV9x-nCJdqzxpB4NZeiC-JpzA8RHQRlCG6GSsXAA45fPqMPmkHnklDqJHXyPQKWStZ7rjJPo6peimSKVHdRGboFIuNKg'" type="button">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/500px-Facebook_Logo_%282019%29.png" class="fb-icon">Войти через Facebook</button>
+                    <button class="sozdat" onclick="window.location.href='https://www.instagram.com/accounts/emailsignup/?next='" type="button">Создать новый аккаунт</button>
+                    <img class="meta" src="https://cdn.bcs-express.ru/article-head/12289.jpg">
+                </form>
+            </div>
+        </div>
+         <footer class="footer">
+        <div class="footer-links">
+            <a href="#">Meta</a>
+            <a href="#">Информация</a>
+            <a href="#">Блог</a>
+            <a href="#">Вакансии</a>
+            <a href="#">Помощь</a>
+            <a href="#">API</a>
+            <a href="#">конфиденциальность</a>
+            <a href="#">Условия</a>
+            <a href="#">Места</a>
+            <a href="#">Instagram Life</a>
+            <a href="#">Meta AI</a>
+            <a href="#">Threads</a>
+            <a href="#">Загрузка контактов и лиц, не являющихся пользователями</a>
+            <a href="#">Meta Verified</a>
+        </div>
+        <div class="footer-meta">© 2026 Instagram from Meta</div>
+    </footer>
+    </body>
+</html>
