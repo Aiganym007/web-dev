@@ -1,0 +1,13 @@
+<section class="page">
+  <header class="head">
+    <h2>Online Store</h2>
+    <p>Catalog of real products from Kaspi.kz</p>
+
+  <div class="grid">
+    <app-product-card
+      *ngFor="let p of products"
+      [product]="p"
+      (shared)="onShared($event)"
+    ></app-product-card>
+  </div>
+</section>
