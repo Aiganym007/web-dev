@@ -1,0 +1,28 @@
+.page { padding: 18px; max-width: 1200px; margin: 0 auto; }
+.head h2 { margin: 0 0 6px; font-size: 26px; }
+.head p { margin: 0; color: #666; }
+
+.toast {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border: 1px solid #e5e5ea;
+  border-radius: 12px;
+  background: #fafafa;
+  width: fit-content;
+}
+
+.grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: start; 
+}
+
+@media (max-width: 1100px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 820px)  { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px)  { .grid { grid-template-columns: 1fr; } }
+
+.empty { 
+  color: #666; 
+  padding: 10px 0; 
+}

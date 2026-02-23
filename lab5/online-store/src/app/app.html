@@ -1,0 +1,30 @@
+<section class="page">
+  <header class="head">
+    <h2>Online Store</h2>
+    <p>Select a category to view products</p>
+
+    <div class="cats">
+      <button class="catBtn" (click)="clearCategory()" [class.active]="selectedCategoryId() === null">
+        All / Welcome
+      </button>
+
+      @for (c of categories; track c.id) {
+        <button
+          class="catBtn"
+          (click)="selectCategory(c.id)"
+          [class.active]="selectedCategoryId() === c.id"
+        >
+          {{ c.name }}
+        </button>
+      }
+    </div>
+  </header>
+
+  @if (selectedCategoryId() === null) {
+    <div class="welcome">
+      Choose a category 
+    </div>
+  } @else {
+    <app-product-list [products]="products()"></app-product-list>
+  }
+</section>
